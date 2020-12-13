@@ -1,0 +1,311 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+body{
+    background-color: black;
+    color : white ; 
+    justify-content: center ;
+    align-items: center ;
+}
+
+/* navigation */ 
+header{
+    position : relative ; 
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+}
+.menu-icon i{
+    font-size: 35px ;
+    cursor: pointer;
+    color: #fafafa;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 42, 48) ;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+}
+#open{
+    position: fixed;
+    top:10px ; 
+    right : 10px ; 
+    transition :  all 0.5s ease-in-out;
+    display: block;
+}
+#close{
+    position: absolute;
+    top: 10px ; 
+    left: 5px;
+    color: whitesmoke;
+}
+
+nav{
+    position: fixed;
+    top: 0px ;
+    right: -650px ;
+    height: 100%;
+    width: 30%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 ;
+    z-index: 30;
+    transition :  all 0.5s ease-in-out;
+    background-color: rgba(105, 103, 103, 0.71);
+    border : 1.5px solid green ;
+    
+    
+}
+
+.navbar{
+    font-size: 20px ;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+ul li  {
+   
+   border-radius: 20px ;
+   align-items: center ; 
+   text-align: center;
+}
+ul li:hover{
+    background-color: rgba(0, 139, 30, 0.623);
+    transition: all 0.3s ease-in-out;
+}
+/* --x-- Navigation --x-- */ 
+
+/* main */
+#container{
+transition: all 0.1ms ease-in-out;
+}
+.welcome-section{
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 15px 0 ;
+    margin-top: 15px ;
+    display: flex;
+    flex-direction: column;
+    font-size: 28px ;
+    white-space: pre-line;
+    text-transform: uppercase;
+    height: 450px;
+}
+
+.separation{
+    width: 100%;
+    z-index: -1 ;
+    position: relative;
+    top: -220px; 
+    right: 0px ;
+}
+
+#join-btn{
+    color: white ;
+    width : 50% ; 
+    height: 30px ;
+    background: transparent;
+    border: 2px solid greenyellow ;
+    border-radius: 25px;
+    font: 15px bold;
+}
+
+#join-btn:hover{
+    background-color: rgba(0, 139, 30, 0.623);
+    transition: all 0.3s ease-in-out;
+}
+.wave{
+    position: absolute;
+    top: -10px ;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.login{
+    position:relative; 
+    top: 0px;
+    background-color: white;
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   background-image: url(images/43b3cea43222809b3866e1105506eada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-form{
+    position: absolute;
+    top: 100px ;
+    right: 10px;
+    transform: translate3d(-1800px,0,0);
+    margin: 10px;
+    padding: 15px;
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 420px;
+    box-shadow: 5px 10px 25px black;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+.login-form{  
+    position: absolute;
+    top: 100px ;
+    right: 10px;
+    transform: translate3d(0,0,0);
+    margin: 10px;
+    padding: 15px;
+    color: black ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 420px;
+    box-shadow: 5px 10px 25px black;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+input{
+    border: 2px solid rgb(74, 117, 10) ;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    height: 25px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+}
+.form-h3{
+    position: absolute;
+    top: 0px;
+    font-size: 28px;
+    color: black;
+    text-shadow: 10px 5px 25px  white;
+}
+ .form-h4{
+    color:black; 
+    font-size: 25px;
+    text-shadow: 10px 5px 20px  white;
+
+   
+}
+.btn{
+    color:black ;
+    text-shadow: 10px 10px 25px  white;
+
+    width : 50% ; 
+    height: 30px ;
+    background: transparent;
+    border: 2px solid  rgb(74, 117, 10) ;
+    border-radius: 25px;
+    font: 15px bold;
+}
+
+.btn:hover{
+    background-color: rgba(0, 139, 30, 0.623);
+    transition: all 0.3s ease-in-out;
+}
+
+/* events */
+.whitewave{
+    position: relative;
+    top: -80px ;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+.whitewave-bottom{
+    position: absolute;
+    bottom: -150px ;
+    height:150px;
+    width: 100%;
+    z-index: -1;
+    left: 0px;
+}
+.next,.prev{
+    height: 25px;
+    width: 25px;
+    background-color: #fafafa;
+     opacity: 0.5;
+     z-index: 2;
+}
+
+.events{
+    position:relative; 
+    top: 0px;
+    background-color:white;
+    height: 450px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.slider-container{
+    position: relative;
+    top: -50px;
+    width: 90% ;
+    margin: auto;
+    max-height: 400px;
+}
+.slider > img{
+    max-height: 400px;
+}
+/* --x-- events  --x-- */
+
+/* about-us */
+.about-us{
+    position: relative; 
+    top: 0px;
+    height: 550px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   background-image: url(43b3cea43222809b3866e1105506eada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.description-container{
+    position: relative;
+    top: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 2;
+    color: wheat;
+}
+p{
+    margin: 15px;
+}
+.img-holder{
+    width: 75px;
+    height: 75px;
+    border-radius: 25px ;
+    margin: 10px ;
+    position: relative;
+    top: 50px;
+}
+/* --x-- about-us  --x-- */
+
+/* --x-- main --x--*/
